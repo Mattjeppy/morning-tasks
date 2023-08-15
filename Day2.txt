@@ -1,0 +1,34 @@
+What are the difference between a server and your computer?
+
+A server is a powerful dedicated computer that multiple clients can connect to and provides services for those clients.
+
+Although a desktop computer can be set up as a server, they have limitations (not designed to handle the workload \ limited connections).
+
+Servers have more powerful hardware, e.g Desktops have only one processor, servers have multiple xeon, more ram, 
+
+Servers should have swappable hard drives, should a harddrive fail, the server is still up and running and no memory is lost through RAID (save data across multiple disks). Harddrive can be replaced and RAID will replace data lost automatically.
+
+Servers has backup power supplies and use server operating systems such as LINUX, Microsoft Windows server and MacOS server. 
+
+Types of servers: 
+Web servers(website data)
+Email servers (facilitates email functionality)
+Database server (stores backend data)
+
+How can you tell whether an IP address is public or private?
+
+Public IP addresses are registered on the internet and is unique. They are assigned by your internet server provider (ISP). IPv4.
+
+Private IP addresses are not publicly registered on the internet and not unique. They are only used within a home or a business (internal use). DHCP is a service used in routers to assign private IPs to devices.  
+![](Screenshot%202023-08-15%20at%2009.11.55.png)
+Private IP is translated to public IP through the router using (NAT = network address translation) to connect to the internet. 
+
+#### Explain in your own words the difference between Cloud, Hybrid, and On-Premises deployment models.
+
+**Cloud Deployment:** Hosted on remote servers, scalable, accessible via the internet, cost-effective, managed by third-party providers.
+**Hybrid Deployment:** Mixes cloud and on-premises resources, offers flexibility and data control, requires integration and management.
+**On-Premises Deployment:** Runs on your own physical hardware, full data control, high upfront costs, and maintenance responsibilities.
+**Private Cloud:** Dedicated to one organization, offers more control and security.
+
+Businesses choose their cloud model based on their needs
+
