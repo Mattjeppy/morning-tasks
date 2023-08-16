@@ -1,0 +1,19 @@
+# Cloud Services
+​
+Decide whether the following AWS services are Infrastructure as a service (IaaS), Platform as a service (PaaS), Software as a service (SaaS), or Serverless and give your reasoning.
+​
+EC2 - IaaS - rent a server(computer)
+​
+S3 - IaaS - provides scalable storage for objects (files, images, videos, and backups.)
+S3 offers a pay-as-you-go model, enabling users to only pay for the storage they use.  
+​
+RDS - PaaS / DBaaS - Relational Database Service, managed database instances in the cloud, relieving users from many of the administrative tasks associated with traditional database management
+​
+Lambda - PaaS / Faas - Lambda runs and automatically manages your backend code. Paas offers more control over application development
+​
+EKS - PaaS - managed and supported Kubernetes service for development (another platform)
+​
+DynamoDB - SaaS / DBaaS - fully managed NOSQL database server offering high functionality / no development required.
+
+
+​
