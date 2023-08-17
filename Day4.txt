@@ -1,0 +1,31 @@
+# NAT, routes, Internet Gateway
+​
+Answer the following questions
+​
+1. What do you think the purpose of an internet gateway is? 
+What would we not be able to do without one?
+
+The internet gateway is an AWS networking component that allows the instances within your VPC to communicate with the public internet. It handles both inbound and outbound traffic. NAT gateways are responsible for handling the translation of private IP addresses used within your VPC to public IP addresses that are routable on the global Internet. 
+​
+2. Thinking back to a previous session, where do you think you might be using a NAT gateway right now?
+
+Within our VPCs to allow our instances public internet access.
+​
+3. What IP addresses will be matched by the CIDR block of `0.0.0.0/0`?
+
+The CIDR block 0.0.0.0/0 represents the entire IPv4 address space. In other words, it covers all possible IP addresses from 0.0.0.0 to 255.255.255.255. 
+
+   - for bonus points, explain why?
+
+In CIDR notation, the number after the slash indicates how many bits of the IP address is used for the network portion of the address. The remaining bits are then available for the host portion.
+
+The /0 of the CIDR block is used to determine how many portions of the CIDR block are restricted. This means that all bits in the IP address are part of the network portion, and none are available for the host portion. The subnet mask is all zeros, indicating that there's no subnet division.
+
+4. In your own words, what is the difference between a NAT gateway and an Internet Gateway? When would you want one over the other?
+
+Although similar, they have two different uses. 
+
+NAT gateway is used for private instances within a VPC to access the internet, keeping their IP addresses hidden and maintaining security.
+
+Internet gateway is used for public instances to access the internet, useful for when you want your public instances to be directly accessible from the internet.
+
