@@ -5,19 +5,20 @@ Identify the kinds of failure readiness described below, giving your reasoning;
 - A system that switches to a new server when one fails
 
 This approach ensures continuous service availability and reduces downtime.
+This avoids having a single point of failure. 
 ​
 - Adding replica databases with a master database
 
-In case the master database fails, one of the replicas can be promoted to the new master, further enhancing system resilience
+In case the master database fails, one of the replicas can be promoted to the new master, further enhancing system resilience. This avoids having a single point of failure. 
 ​
 - Having a 2-3 colleagues who have access to the master password
 
-Having multiple colleagues with access to critical credentials like the master password ensures that there are backup individuals who can take action if the primary person is unavailable. This helps prevent a single point of failure and facilitates timely response to issues.
+Having multiple colleagues with access to critical credentials like the master password ensures that there are backup individuals who can take action if the primary person is unavailable. This helps prevent a single point of failure and facilitates timely response to issues. This is also useful for monitoring purposes and fault isolation. 
 ​
 - Performing health checks on a server
 
-Performing health checks means potential issues can be identified and addressed before they lead to a failure. Although this doesn't stop every eventuality, it certainly reduces the risk. 
+Performing health checks (monitoring) means potential issues can be identified and addressed before they lead to a failure. Although this doesn't stop every eventuality, it certainly reduces the risk. 
 ​
 - Spreading out user requests over multiple machines rather than just one powerful one
 
-Spreading user requests over multiple machines (load balancing) enhances system performance and availability. With AWS, this can be achieved using services like Elastic Load Balancing (ELB), which distributes incoming traffic across multiple instances. This prevents one machine becoming too overwhelmed with requests and allows resources to be scaled up and down when needed.
+Spreading user requests over multiple machines (load balancing) enhances system performance and availability (avoiding SPOF). With AWS, this can be achieved using services like Elastic Load Balancing (ELB), which distributes incoming traffic across multiple instances. This prevents one machine becoming too overwhelmed with requests and allows resources to be scaled up and down when needed.
