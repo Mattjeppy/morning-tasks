@@ -22,4 +22,4 @@ This poses a security risk to the infrastructure of the network configuration, a
 ​
 ### Provide an example of where using multiple Terraform workspaces would be beneficial
 
-Developing a web application in which a test/development environment could be deployed,  as well as the full scale production environment. This would allow an environment to "test" on before deploying to the main environment. 
+Developing a web application in which a test/development environment could be deployed,  as well as the full scale production environment. This would allow an environment to "test" on before deploying to the main environment. s
